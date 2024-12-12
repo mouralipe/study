@@ -1,21 +1,15 @@
-import Link from 'next/link'
+import { StyledLink } from '@/components/styled-link'
 
 export default function Home() {
   return (
     <div className="flex flex-col space-y-2">
-      <Link
-        href="/forms"
-        className="font-medium text-foreground hover:underline"
-      >
-        form
-      </Link>
+      <StyledLink href="/server-action-form">form</StyledLink>
 
-      <Link
-        href="/parallel-routes"
-        className="font-medium text-foreground hover:underline"
-      >
-        parallel routes
-      </Link>
+      <StyledLink href="/table">table</StyledLink>
+
+      <StyledLink href="/parallel-routes">parallel routes</StyledLink>
+
+      <StyledLink href="/interception-routes">Interception routes</StyledLink>
     </div>
   )
 }
